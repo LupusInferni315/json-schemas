@@ -1,63 +1,54 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
-  "$id": "dlc",
-  "title": "JSON Schema for my JSON file format",
-  "type": "object",
-  "definitions": {
-    "uuid": {
-      "type": "string",
-      "pattern": "^([0-9a-zA-Z]{8})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{12})$",
-      "minLength": 36,
-      "maxLength": 36
-    },
-    "version": {
-      "type": "array",
-      "items": {
-        "type": "integer",
-        "minimum": 0
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "$id": "dlc",
+    "title": "JSON Schema for my JSON file format",
+    "type": "object",
+    "definitions": {
+      "uuid": {
+        "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/uuid/schema"
       },
-      "minItems": 2,
-      "maxItems": 4
-    }
-  },
-  "properties": {
-    "name": {
-      "description": "The name of this DLC Package",
-      "type": "string"
+      "version": {
+        "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/version/schema"
+      }
     },
-    "description": {
-      "description": "A description of what this DLC Package constains",
-      "type": "string"
-    },
-    "uuid": {
-      "allOf": [ { "$ref": "#/definitions/uuid" } ],
-      "description": "The unique identifier of this DLC Package"
-    },
-    "softwareVersion": {
-      "description": "The minimum version of the game this DLC Package is compatible with",
-      "allOf": [ { "$ref": "#/definitions/version" } ]
-    },
-    "version": {
-      "description": "The version of this DLC Package",
-      "allOf": [ { "$ref": "#/definitions/version" } ]
-    },
-    "dependencies": {
-      "description": "The DLC Packages required for this DLC Package to work",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "uuid": {
-            "description": "The unique identifier of the DLC Package required",
-            "allOf": [ { "$ref": "#/definitions/uuid" } ]
-          },
-          "version": {
-            "description": "The minumum version of the DLC Package required",
-            "allOf": [ { "$ref": "#/definitions/version" } ]
+    "properties": {
+      "name": {
+        "description": "The name of this DLC Package",
+        "type": "string"
+      },
+      "description": {
+        "description": "A description of what this DLC Package constains",
+        "type": "string"
+      },
+      "uuid": {
+        "allOf": [ { "$ref": "#/definitions/uuid" } ],
+        "description": "The unique identifier of this DLC Package"
+      },
+      "softwareVersion": {
+        "description": "The minimum version of the game this DLC Package is compatible with",
+        "allOf": [ { "$ref": "#/definitions/version" } ]
+      },
+      "version": {
+        "description": "The version of this DLC Package",
+        "allOf": [ { "$ref": "#/definitions/version" } ]
+      },
+      "dependencies": {
+        "description": "The DLC Packages required for this DLC Package to work",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "uuid": {
+              "description": "The unique identifier of the DLC Package required",
+              "allOf": [ { "$ref": "#/definitions/uuid" } ]
+            },
+            "version": {
+              "description": "The minumum version of the DLC Package required",
+              "allOf": [ { "$ref": "#/definitions/version" } ]
+            }
           }
         }
       }
-    }
-  },
-  "required": [ "name", "description", "uuid", "softwareVersion", "version" ]
-}
+    },
+    "required": [ "name", "description", "uuid", "softwareVersion", "version" ]
+  }
