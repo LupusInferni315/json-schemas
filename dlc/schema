@@ -21,16 +21,16 @@
         "type": "string"
       },
       "uuid": {
-        "allOf": [ { "$ref": "#/definitions/uuid" } ],
+        "allOf": [ { "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/uuid/schema" } ],
         "description": "The unique identifier of this DLC Package"
       },
       "softwareVersion": {
         "description": "The minimum version of the game this DLC Package is compatible with",
-        "allOf": [ { "$ref": "#/definitions/version" } ]
+        "allOf": [ { "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/version/schema" } ]
       },
       "version": {
         "description": "The version of this DLC Package",
-        "allOf": [ { "$ref": "#/definitions/version" } ]
+        "allOf": [ { "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/version/schema" } ]
       },
       "dependencies": {
         "description": "The DLC Packages required for this DLC Package to work",
@@ -40,11 +40,11 @@
           "properties": {
             "uuid": {
               "description": "The unique identifier of the DLC Package required",
-              "allOf": [ { "$ref": "#/definitions/uuid" } ]
+              "allOf": [ { "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/uuid/schema" } ]
             },
             "version": {
               "description": "The minumum version of the DLC Package required",
-              "allOf": [ { "$ref": "#/definitions/version" } ]
+              "allOf": [ { "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/version/schema" } ]
             }
           }
         }
