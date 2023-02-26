@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
-  "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/damage/schema",
+  "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/damage-type/schema",
   "title": "JSON Enum for Damage Types",
   "type": "string",
   "enum": [ "Acid", "Bludgeoning", "Cold", "Electricity", "Fire", "Piercing", "Sonic", "Slashing" ]
