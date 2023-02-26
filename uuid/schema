@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://github.com/LupusInferni315/json-schemas/edit/main/uuid/schema",
   "title": "JSON Schema for my JSON file format",
   "type": "string",
   "format": "^([0-9a-zA-Z]{8})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{12})$",
