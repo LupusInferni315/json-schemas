@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/damage/schema",
+  "title": "JSON Schema for damage effects",
+  "type": "object",
+  "properties": {
+    "die": {
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/dice/schema"
+        }
+      ],
+      "description": "The dice roll for this weapon"
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/damage-type/schema"
+        }
+      ],
+      "description": "The damage type of this weapon"
+    }
+  },
+  "required": [ "die", "type" ]
+}
