@@ -8,6 +8,10 @@
       "description": "The name of the item",
       "type": "string"
     },
+    "description": {
+     "description": "An in-game description of the item",
+     "type": "string"
+    },
     "id": {
       "description": "The Hexadecimal ID number of the item",
       "type": "string",
@@ -24,5 +28,5 @@
       "minimum": 0
     }
   },
-  "required": [ "name", "id", "level", "price" ]
+  "required": [ "name", "id", "level", "price", "description" ]
 }
