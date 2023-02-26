@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema",
-    "$id": "dlc",
+    "$id": "https://github.com/LupusInferni315/json-schemas/edit/main/dlc/schema",
     "title": "JSON Schema for my JSON file format",
     "type": "object",
     "definitions": {
