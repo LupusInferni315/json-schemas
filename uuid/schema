@@ -1,9 +1,9 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
-  "$id": "https://github.com/LupusInferni315/json-schemas/edit/main/uuid/schema",
-  "title": "JSON Schema for my JSON file format",
+  "$schema": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/uuid/schema",
+  "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/uuid/schema",
+  "title": "JSON Schema for a Universally Unique Identifier",
   "type": "string",
-  "format": "^([0-9a-zA-Z]{8})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{12})$",
+  "format": "^([0-9a-fA-F]{8})-([0-9a-fA-F]{4})-([0-9a-fA-F]{4})-([0-9a-fA-F]{4})-([0-9a-fA-F]{12})$",
   "minLength": 36,
   "maxLength": 36
 }
