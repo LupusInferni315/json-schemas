@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/dice/schema",
+  "title": "JSON Schema for Dice",
+  "type": "object",
+  "properties": {
+    "count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sides": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [ "count", "sides" ]
+}
