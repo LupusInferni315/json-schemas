@@ -9,7 +9,7 @@
       "type": "string"
     },
     "id": {
-      "description": "The Hexadecimal ID number",
+      "description": "The Hexadecimal ID number of the item",
       "type": "string",
       "pattern": "^[a-fA-F0-9]{8}$"
     },
