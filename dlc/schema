@@ -48,7 +48,9 @@
             }
           }
         }
-      }
+      },
+      "$comment":{ "type": "string" }
     },
-    "required": [ "name", "description", "uuid", "softwareVersion", "version" ]
+    "required": [ "name", "description", "uuid", "softwareVersion", "version" ],
+    "additionalProperties": false
   }
