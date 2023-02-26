@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for Package Versions",
+  "type": "array",
+  "items": {
+    "type": "integer",
+    "minimum": 0
+  },
+  "minItems": 2,
+  "maxItems": 4
+}
