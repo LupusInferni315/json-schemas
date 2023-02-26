@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
-  "$id": "https://github.com/LupusInferni315/json-schemas/edit/main/version/schema",
+  "$schema": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/meta-01/schema",
+  "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/version/schema",
   "title": "JSON Schema for Package Versions",
   "type": "array",
   "items": {
