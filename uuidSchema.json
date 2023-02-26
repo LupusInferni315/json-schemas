@@ -2,5 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "JSON Schema for my JSON file format",
   "type": "string",
-  "format": "^([0-9a-zA-Z]{8})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{12})$"
+  "format": "^([0-9a-zA-Z]{8})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{4})-([0-9a-zA-Z]{12})$",
+  "minLength": 36,
+  "maxLength": 36
 }
