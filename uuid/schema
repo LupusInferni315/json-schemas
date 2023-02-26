@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/uuid/schema",
+  "$schema": "http://json-schema.org/draft-04/schema",
   "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/uuid/schema",
   "title": "JSON Schema for a Universally Unique Identifier",
   "type": "string",
