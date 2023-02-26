@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/item/schema",
+  "title": "JSON Schema for all in-game items",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the item",
+      "type": "string"
+    },
+    "id": {
+      "description": "The Hexadecimal ID number",
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{8}$"
+    },
+    "level": {
+      "description": "The level of character this item is intended for",
+      "type": "integer",
+      "minimum": 0
+    },
+    "price": {
+      "description": "The price of the item",
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}
