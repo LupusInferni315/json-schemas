@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/item/equipment/schema",
+  "title": "JSON Schema for all in-game equipment",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/LupusInferni315/json-schemas/main/item/schema"
+    }
+  ],
+  "properties": {
+    "bulk": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "string",
+          "enum": [ "-", "L" ]
+        }
+      ]
+    }
+  },
+  "required": [ "name", "id", "level", "price", "bulk" ]
+}
