@@ -5,10 +5,12 @@
   "type": "object",
   "properties": {
     "count": {
+      "description": "The number of dice to roll",
       "type": "integer",
       "minimum": 1
     },
     "sides": {
+      "description": "The number of sides on the dice",
       "type": "integer",
       "minimum": 1
     }
