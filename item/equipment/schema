@@ -9,6 +9,7 @@
     }
   ],
   "properties": {
+    "description": "The amount of bulk the equipment has",
     "bulk": {
       "anyOf": [
         {
