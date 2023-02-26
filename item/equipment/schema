@@ -9,8 +9,8 @@
     }
   ],
   "properties": {
-    "description": "The amount of bulk the equipment has",
     "bulk": {
+     "description": "The amount of bulk the equipment has",
       "anyOf": [
         {
           "type": "integer",
@@ -23,5 +23,5 @@
       ]
     }
   },
-  "required": [ "name", "id", "level", "price", "bulk" ]
+  "required": [ "name", "id", "level", "price", "description", "bulk" ]
 }
